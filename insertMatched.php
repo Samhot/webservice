@@ -1,9 +1,7 @@
-<?php $hostname = '193.37.145.61'; /*** mysql username ***/ $username = 'srecc735619'; /*** mysql password ***/ $password = 'YCNNDrK2'; function db_connect ($hostname, $username, 
+<?php $hostname = '164.132.195.67'; /*** mysql username ***/ $username = 'root'; /*** mysql password ***/ $password = 'abcd4ABCD'; function db_connect ($hostname, $username, 
 $password){
-    $bdd = new PDO("mysql:host=$hostname;dbname=srecc735619", $username, $password);
-    return $bdd;
-}
-try {
+    $bdd = new PDO("mysql:host=$hostname;dbname=mybookingtrainig", $username, $password);
+    return $bdd; try {
     $bdd = db_connect ($hostname, $username, $password);
     $idAdvert=$_GET["idAdvert"];
     $idCandidate=$_GET["idCandidate"];
